@@ -27,9 +27,9 @@ La parte de nuestro proyecto que se encarga de detectar la mascarilla la haremos
   - El archivo train_mask_detector.py es el que se encarga de analizar todas fotos que están almacenadas en el dataset en la cual hay imágenes de ejemplo para que el programa aprenda a diferenciar entre mascarilla y no mascarilla.
   - Para ejecutar el programa lo que debemos hacer es ejecutar: python detect_mask_video.py el cual ejecutara el programa y mostrara alrededor de las caras de los usuarios un recuadro en verde y un texto diciendo que el usuario lleva mascarilla y un recuadro en rojo cuando el usuario no la lleva. Para terminar el proceso lo que hacemos es presionar la tecla ctrl + c y se acabara el proceso.
   - Una vez el proceso haya acabado se creara un archivo resultado.txt en el cual se almacena un resultado True o False dependiendo de si el uso de las mascarillas es com-o tiene que ser o no.   
-- Una vez que tenemos el txt lo que hacemos es pasarlo a la raspberry para que el programa se ejecute dependiendo de el valor almacenado. Para ello utilizamos el siguiente comando: scp C:\Users\Joseba\Downloads\Face-Mask-Detection-master\Face-Mask-Detection-master\resultado.txt pi@daic18:/home/pi/Desktop/Proyecto
+- Una vez que tenemos el txt lo que hacemos es pasarlo a la raspberry para que el programa se ejecute dependiendo de el valor almacenado. Para ello utilizamos el siguiente comando: scp C:\Users\Joseba\Downloads\Detector-de-mascarilla\resultado.txt pi@daic18:/home/pi/Desktop/Proyecto
 
 #### Ejecución en la Raspberry
 Una vez tengamos los pasos anteriores realizado podremos ejecutar el programa.
 
-Para ejecutarlo bastará con introducir el comando python proyecto.py. Como es obvio necesitaremos que el documento de texto que proviene del ordenador de windows para que funcione correctamente
+Para ejecutarlo bastará con introducir el comando python proyecto.py. Como es obvio necesitaremos el documento que se ha creado en windows para que todo se ejecute correctamente. 
