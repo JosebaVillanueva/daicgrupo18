@@ -18,6 +18,7 @@ Para la descarga del programa hay que accede a nuestro repositorio de github en 
 
 ### Puesta en marcha:
 #### Una vez que tenemos los archivos del repositorio descargados podemos proceder a ejecutar el programa:
+#### Ejecución en Windows
 La parte de nuestro proyecto que se encarga de detectar la mascarilla la haremos en Windows ya que la raspberry no tiene suficiente poder de ejecución y por ello se queda atascada y no podríamos continuar con el resto del programa.
 - Dentro del proyecto vamos a acceder a la carpeta de Detector de mascarilla.
 - Una vez en la carpeta ejecutamos el siguiente comando el cmd de Windows: 
@@ -27,3 +28,5 @@ La parte de nuestro proyecto que se encarga de detectar la mascarilla la haremos
   - Para ejecutar el programa lo que debemos hacer es ejecutar: python detect_mask_video.py el cual ejecutara el programa y mostrara alrededor de las caras de los usuarios un recuadro en verde y un texto diciendo que el usuario lleva mascarilla y un recuadro en rojo cuando el usuario no la lleva. Para terminar el proceso lo que hacemos es presionar la tecla ctrl + c y se acabara el proceso.
   - Una vez el proceso haya acabado se creara un archivo resultado.txt en el cual se almacena un resultado True o False dependiendo de si el uso de las mascarillas es com-o tiene que ser o no.   
 - Una vez que tenemos el txt lo que hacemos es pasarlo a la raspberry para que el programa se ejecute dependiendo de el valor almacenado. Para ello utilizamos el siguiente comando: scp rutaOrigen usuario@equipo:rutaDestino
+
+#### Ejecución en la Raspberry
